@@ -1,0 +1,51 @@
+<html>
+<header>
+<h1><i>RECIPE BOOK</i><h1>
+</header>
+<head>
+<title>Recipe Book</title>
+</head>
+<style>
+    h1{
+        color:blue;
+    }
+    h2{
+        color:yellow;
+    }
+    img{
+        height:600px;
+        width:1200px;
+    }
+    body{
+        background-color:orangered;
+        text-align:center;
+    }
+    </style>
+<body>
+{% load static %}
+    <h2>Recipe 1 Puri</h2>
+    <h2>Recipe 2 vada</h2>
+    <h2>Recipe 3 dosa</h2>
+    <h2>Recipe 4 idle</h2>
+<div class="image-container">
+<img src="puri.jpg"id="slideimage">
+ </div>
+ <div id="main">
+ <script> 
+                        function first(){
+                            document.getElementById("slideimage").src="vada.jpg";
+                        }
+                        function second(){
+                            document.getElementById("slideimage").src="dosa.jpg";
+                        }
+                        function third(){
+                            document.getElementById("slideimage").src="idle.jpg";
+                        }
+                        setInterval(first,2000);
+                        setInterval(second,4000);
+                        setInterval(third,6000);
+                     </script>
+                     </div>   
+<p><a href="types.html">lists</a></p>
+</body>
+</html>
